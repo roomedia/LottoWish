@@ -19,7 +19,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/admob_app_id" />
+            android:value="ca-app-pub-8418699849772106~8459879415" />
 
         <activity
             android:name="com.Roo_Media_.lottowish.ui.MainActivity"
@@ -41,7 +41,7 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"
-            tools:ignore="LockedOrientationActivity"></activity>
+            tools:ignore="LockedOrientationActivity" />
 
         <activity
             android:name="com.Roo_Media_.lottowish.ui.gamelist.QRPortraitActivity"
@@ -51,11 +51,11 @@
             android:stateNotNeeded="true"
             android:theme="@style/zxing_CaptureTheme"
             android:windowSoftInputMode="stateAlwaysHidden"
-            tools:ignore="LockedOrientationActivity"></activity>
+            tools:ignore="LockedOrientationActivity" />
 
         <receiver
             android:name="com.Roo_Media_.lottowish.utils.NotifyReceiver"
-            android:exported="false"></receiver>
+            android:exported="false" />
     </application>
 
 </manifest>
