@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_game">
+        <item>@string/add_game_auto</item>
+        <item>@string/add_game_manual</item>
+        <item>@string/add_game_qr</item>
+    </string-array>
+</resources>

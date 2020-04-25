@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="com.Roo_Media_.lottowish.AppTheme27" parent="com.Roo_Media_.lottowish.AppTheme21">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightNavigationBar">?attr/isLightTheme</item>
+    </style>
+
+    <style name="com.Roo_Media_.lottowish.AppTheme" parent="com.Roo_Media_.lottowish.AppTheme27" />
+</resources>

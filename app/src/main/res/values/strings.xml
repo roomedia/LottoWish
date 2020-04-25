@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">로또위시</string>
+    <string name="title_wishlist">위시리스트</string>
+    <string name="title_gamelist">게임리스트</string>
+
+    <string name="url_next">https://m.dhlottery.co.kr/common.do?method=main</string>
+    <string name="regex_next">(((\\d,?)+)원)</string>
+
+    <string name="url_result">https://m.dhlottery.co.kr/gameResult.do?method=byWin&amp;drwNo=</string>
+    <string name="regex_result">동행복권 (\\d+)회 당첨번호 ((\\d{1,2},?){6})\\+(\\d{1,2}).+ (당첨금액 ((\\d,?)+)원)</string>
+
+    <string name="url_query">https://m.dhlottery.co.kr/qr.do?method=winQr&amp;v=</string>
+    <string name="regex_query">span&gt;(.+)&lt;/span&gt;&lt;strong&gt;(.+)&lt;/strong</string>
+    <string name="regex_query_ele">&lt;td class=.+&gt;(.+)&lt;/</string>
+
+    <string name="money_expected">예상 당첨금</string>
+    <string name="money_left">남음</string>
+    <string name="money_lack">부족</string>
+    <string name="money_how_much">총 $ 게임 추첨 대기</string>
+
+    <string name="assume">약</string>
+    <string name="unit1">원</string>
+    <string name="unit2">만 원</string>
+    <string name="unit3">억 원</string>
+    <string name="unit4">조 원</string>
+
+    <string name="name_wish">이름</string>
+    <string name="hint_name_wish">이름을 입력하세요</string>
+    <string name="cost_wish">금액</string>
+    <string name="hint_cost_wish">금액을 입력하세요</string>
+    <string name="important_wish">중요도</string>
+
+    <string name="top_priority">맨 앞</string>
+    <string name="bottom_priority">맨 뒤</string>
+    <string name="before_priority"> 보다 앞</string>
+    <string name="after_priority"> 보다 뒤</string>
+    <string name="current_priority">현재</string>
+    <string name="picture_wish">사진</string>
+
+    <string name="round">회</string>
+    <string name="round_next">다음 회차</string>
+    <string name="round_game">회차</string>
+    <string name="date_game">발표일</string>
+    <string name="umber_game">번호</string>
+
+    <string name="cancel">취소</string>
+    <string name="ok">저장</string>
+
+    <string name="delete">삭제</string>
+    <string name="delete_all">전체 삭제</string>
+    <string name="delete_all_title">목록 전체를 삭제하시겠습니까?</string>
+    <string name="delete_all_message">이 작업은 되돌릴 수 없습니다.</string>
+
+    <string name="add_game_auto">자동</string>
+    <string name="add_game_manual">수동</string>
+    <string name="add_game_qr">QR 스캔</string>
+
+    <string name="warning">은(는) 비워둘 수 없습니다.</string>
+    <string name="game_warning">당첨금은 실물 복권 소지자에게만 지급합니다!</string>
+
+    <string name="push_channel_id">PUSH_NOTIFICATION</string>
+    <string name="push_title">로또 추첨 완료</string>
+    <string name="push_text">지금 당첨 결과를 확인해보세요!</string>
+
+    <string name="preview">$를 추가해 보세요…</string>
+    <string name="preview_wish">위시리스트</string>
+    <string name="preview_game">로또 번호</string>
+
+    <string name="admob_app_id_for_test">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id_for_test">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="admob_app_id">ca-app-pub-8418699849772106~8459879415</string>
+    <string name="main_unit_id">ca-app-pub-8418699849772106/7857244188</string>
+    <string name="add_wish_unit_id">ca-app-pub-8418699849772106/8213349286</string>
+    <string name="add_game_unit_id">ca-app-pub-8418699849772106/7447062528</string>
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    style="@style/com.Roo_Media_.lottowish.AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="@dimen/size_ball"
+        android:layout_height="@dimen/size_ball"
+        android:layout_marginEnd="@dimen/size_half"
+        android:background="@drawable/ripple_background"
+        android:contentDescription="@string/delete"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_delete" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="@string/add_wish_unit_id"
+        app:layout_constraintBottom_toTopOf="@id/scrollContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_octa"
+        app:layout_constraintBottom_toTopOf="@+id/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_double"
+                android:text="@string/name_wish"
+                android:textSize="@dimen/font_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_double"
+                android:ems="10"
+                android:hint="@string/hint_name_wish"
+                android:importantForAutofill="no"
+                android:inputType="textNoSuggestions|textPersonName"
+                android:nextFocusDown="@id/cost"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/nameText"
+                app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+            <TextView
+                android:id="@+id/costText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_triple"
+                android:text="@string/cost_wish"
+                android:textSize="@dimen/font_small"
+                app:layout_constraintStart_toStartOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <TextView
+                android:id="@+id/briefCostText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_single"
+                android:textSize="@dimen/font_small"
+                app:layout_constraintStart_toEndOf="@+id/costText"
+                app:layout_constraintTop_toTopOf="@+id/costText"
+                tools:hint="약 21억" />
+
+            <EditText
+                android:id="@+id/cost"
+                style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_cost_wish"
+                android:importantForAutofill="no"
+                android:inputType="number|text"
+                android:maxLength="18"
+                android:nextFocusDown="@id/ok"
+                app:layout_constraintEnd_toEndOf="@+id/name"
+                app:layout_constraintStart_toStartOf="@+id/costText"
+                app:layout_constraintTop_toBottomOf="@+id/costText" />
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/pictureText"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginTop="@dimen/size_double"-->
+            <!--        android:text="@string/picture_wish"-->
+            <!--        android:textSize="@dimen/font_small"-->
+            <!--        app:layout_constraintStart_toStartOf="@id/cost"-->
+            <!--        app:layout_constraintTop_toBottomOf="@id/cost" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_triple_half"
+        android:paddingStart="@dimen/size_double"
+        android:paddingEnd="0dp"
+        android:text="@string/cancel"
+        android:textSize="@dimen/font_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ok"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_triple_half"
+        android:enabled="false"
+        android:paddingStart="0dp"
+        android:paddingEnd="@dimen/size_double"
+        android:text="@string/ok"
+        android:textSize="@dimen/font_small"
+        app:layout_constraintBottom_toBottomOf="@+id/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

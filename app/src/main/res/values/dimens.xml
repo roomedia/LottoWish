@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="size_half">8dp</dimen>
+    <dimen name="size_single">16dp</dimen>
+    <dimen name="size_single_half">24dp</dimen>
+    <dimen name="size_double">32dp</dimen>
+    <dimen name="size_triple">48dp</dimen>
+    <dimen name="size_triple_half">56dp</dimen>
+    <dimen name="size_quadro">64dp</dimen>
+    <dimen name="size_hexa">96dp</dimen>
+    <dimen name="size_octa">128dp</dimen>
+
+    <dimen name="size_ball">40dp</dimen>
+    <dimen name="size_ball_mini">33dp</dimen>
+
+    <dimen name="font_small">18sp</dimen>
+    <dimen name="font_big">24sp</dimen>
+</resources>

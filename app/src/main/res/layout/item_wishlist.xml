@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="?android:attr/windowBackground"
+    android:paddingStart="@dimen/size_double"
+    android:paddingEnd="@dimen/size_single"
+    tools:layout_editor_absoluteX="1dp">
+
+    <TextView
+        android:id="@+id/priority"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_half"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_triple"
+        android:layout_marginTop="@dimen/size_single"
+        android:layout_marginEnd="@dimen/size_single"
+        app:layout_constraintEnd_toStartOf="@+id/option"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_half"
+        android:layout_marginBottom="@dimen/size_single"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/option"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/size_ball"
+        android:layout_height="@dimen/size_ball"
+        android:background="@drawable/ripple_background"
+        android:gravity="center"
+        android:text="&#8942;"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="@dimen/font_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

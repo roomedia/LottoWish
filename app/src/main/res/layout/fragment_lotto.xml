@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lotto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lottoConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:padding="@dimen/size_single">
+
+        <Spinner
+            android:id="@+id/round"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_triple"
+            android:spinnerMode="dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_single"
+            android:width="@dimen/size_ball"
+            android:height="@dimen/size_ball"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/num2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/round" />
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="@dimen/size_ball"
+            android:height="@dimen/size_ball"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/num1"
+            app:layout_constraintEnd_toStartOf="@+id/num3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/num1"
+            app:layout_constraintTop_toTopOf="@+id/num1" />
+
+        <TextView
+            android:id="@+id/num3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="@dimen/size_ball"
+            android:height="@dimen/size_ball"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/num2"
+            app:layout_constraintEnd_toStartOf="@+id/num4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/num2"
+            app:layout_constraintTop_toTopOf="@+id/num2" />
+
+        <TextView
+            android:id="@+id/num4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="@dimen/size_ball"
+            android:height="@dimen/size_ball"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/num3"
+            app:layout_constraintEnd_toStartOf="@+id/num5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/num3"
+            app:layout_constraintTop_toTopOf="@+id/num3" />
+
+        <TextView
+            android:id="@+id/num5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="@dimen/size_ball"
+            android:height="@dimen/size_ball"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/num4"
+            app:layout_constraintEnd_toStartOf="@+id/num6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/num4"
+            app:layout_constraintTop_toTopOf="@+id/num4" />
+
+        <TextView
+            android:id="@+id/num6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="@dimen/size_ball"
+            android:height="@dimen/size_ball"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/num5"
+            app:layout_constraintEnd_toStartOf="@+id/plus"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/num5"
+            app:layout_constraintTop_toTopOf="@+id/num5" />
+
+        <TextView
+            android:id="@+id/num7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="@dimen/size_ball"
+            android:height="@dimen/size_ball"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/plus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/plus"
+            app:layout_constraintTop_toTopOf="@+id/plus" />
+
+        <TextView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/num6"
+            app:layout_constraintEnd_toStartOf="@+id/num7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/num6"
+            app:layout_constraintTop_toTopOf="@+id/num6" />
+
+        <TextView
+            android:id="@+id/prize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_single"
+            android:layout_marginEnd="@dimen/size_half"
+            android:gravity="end"
+            app:layout_constraintEnd_toEndOf="@+id/round"
+            app:layout_constraintTop_toBottomOf="@+id/num1" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_single_half"
+            android:gravity="bottom|end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/prize"
+            app:layout_constraintTop_toBottomOf="@+id/prize" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_single_half"
+            android:gravity="bottom|end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/prize"
+            app:layout_constraintTop_toBottomOf="@+id/prize" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

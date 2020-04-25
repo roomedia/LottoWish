@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/error"
+        android:drawable="@drawable/ic_error"
+        android:state_enabled="false" />
+
+    <item
+        android:id="@+id/auto"
+        android:drawable="@drawable/ic_input_method_auto" />
+
+    <transition
+        android:drawable="@drawable/ic_input_method_error_to_auto"
+        android:fromId="@id/error"
+        android:toId="@id/auto" />
+
+    <transition
+        android:drawable="@drawable/ic_input_method_auto_to_error"
+        android:fromId="@id/auto"
+        android:toId="@id/error" />
+</animated-selector>

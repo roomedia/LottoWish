@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lottoConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="?android:attr/windowBackground"
+    android:paddingStart="@dimen/size_double"
+    android:paddingEnd="@dimen/size_single"
+    tools:layout_editor_absoluteX="1dp">
+
+    <TextView
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_single_half"
+        android:layout_marginEnd="@dimen/size_half"
+        android:width="@dimen/size_ball_mini"
+        android:height="@dimen/size_ball_mini"
+        android:background="@drawable/clr0"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/num2"
+        app:layout_constraintStart_toEndOf="@+id/itemResult"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_half"
+        android:width="@dimen/size_ball_mini"
+        android:height="@dimen/size_ball_mini"
+        android:background="@drawable/clr0"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/num1"
+        app:layout_constraintEnd_toStartOf="@+id/num3"
+        app:layout_constraintStart_toEndOf="@+id/num1" />
+
+    <TextView
+        android:id="@+id/num3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_half"
+        android:width="@dimen/size_ball_mini"
+        android:height="@dimen/size_ball_mini"
+        android:background="@drawable/clr0"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/num2"
+        app:layout_constraintEnd_toStartOf="@+id/num4"
+        app:layout_constraintStart_toEndOf="@+id/num2" />
+
+    <TextView
+        android:id="@+id/num4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_half"
+        android:width="@dimen/size_ball_mini"
+        android:height="@dimen/size_ball_mini"
+        android:background="@drawable/clr0"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/num3"
+        app:layout_constraintEnd_toStartOf="@+id/num5"
+        app:layout_constraintStart_toEndOf="@+id/num3" />
+
+    <TextView
+        android:id="@+id/num5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_half"
+        android:width="@dimen/size_ball_mini"
+        android:height="@dimen/size_ball_mini"
+        android:background="@drawable/clr0"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/num4"
+        app:layout_constraintEnd_toStartOf="@+id/num6"
+        app:layout_constraintStart_toEndOf="@+id/num4" />
+
+    <TextView
+        android:id="@+id/num6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_single_half"
+        android:width="@dimen/size_ball_mini"
+        android:height="@dimen/size_ball_mini"
+        android:background="@drawable/clr0"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/num5"
+        app:layout_constraintEnd_toStartOf="@+id/option"
+        app:layout_constraintStart_toEndOf="@+id/num5" />
+
+    <TextView
+        android:id="@+id/itemResult"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/option"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/size_ball"
+        android:layout_height="@dimen/size_ball"
+        android:background="@drawable/ripple_background"
+        android:gravity="center"
+        android:text="&#8942;"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="@dimen/font_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="24dp"
+            android:height="24dp"
+            android:alpha="80"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+
+            <path
+                android:name="camera"
+                android:fillColor="#FF000000"
+                android:pathData="M 9 2 L 7.17 4 L 4 4 C 2.9 4 2 4.9 2 6 L 2 18 C 2 19.1 2.9 20 4 20 L 20 20 C 21.1 20 22 19.1 22 18 L 22 6 C 22 4.9 21.1 4 20 4 L 16.83 4 L 15 2 L 9 2 Z M 12 17 C 9.24 17 7 14.76 7 12 C 7 9.24 9.24 7 12 7 C 14.76 7 17 9.24 17 12 C 17 14.76 14.76 17 12 17 Z" />
+
+            <path
+                android:name="circle"
+                android:fillColor="#FF000000"
+                android:pathData="M 12 12 M 8.8 12 C 8.8 11.152 9.137 10.337 9.737 9.737 C 10.337 9.137 11.152 8.8 12 8.8 C 12.848 8.8 13.663 9.137 14.263 9.737 C 14.863 10.337 15.2 11.152 15.2 12 C 15.2 12.848 14.863 13.663 14.263 14.263 C 13.663 14.863 12.848 15.2 12 15.2 C 11.152 15.2 10.337 14.863 9.737 14.263 C 9.137 13.663 8.8 12.848 8.8 12" />
+        </vector>
+    </aapt:attr>
+
+    <target android:name="circle">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="500"
+                android:interpolator="@android:anim/bounce_interpolator"
+                android:propertyName="fillAlpha"
+                android:valueFrom="1"
+                android:valueTo="0"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+
+    <target android:name="camera">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="500"
+                android:interpolator="@android:anim/bounce_interpolator"
+                android:propertyName="pathData"
+                android:valueFrom="M 7 12 C 7 9.24 9.24 7 12 7 C 13.38 7 14.63 7.56 15.535 8.465 C 16.44 9.37 17 10.62 17 12 C 17 14.76 14.76 17 12 17 L 12 17 C 9.24 17 7 14.76 7 12 M 9 2 C 8.39 2.667 7.78 3.333 7.17 4 L 4 4 C 2.9 4 2 4.9 2 6 L 2 18 C 2 19.1 2.9 20 4 20 L 12 20 L 20 20 C 21.1 20 22 19.1 22 18 C 22 16 22 14 22 12 C 22 10 22 8 22 6 C 22 4.9 21.1 4 20 4 L 16.83 4 L 15 2 L 9 2 L 9 2 M 9 8 L 9 8 L 9 8 L 9 8 L 9 8 L 9 8 M 15 8 L 15 8 L 15 8 L 15 8 L 15 8 L 15 8"
+                android:valueTo="M 12 17 C 13 17 14 17 15 17 C 15 17.667 15 18.333 15 19 C 15 20 15 21 15 22 C 13 22 11 22 10 22 L 10 20 C 10 19 10 18 10 17 M 10 2 C 10 3.314 10 4.629 10 5.943 L 10 8.229 C 10 8.953 10 9.676 10 10.4 L 10 12.8 C 10 13.2 10 13.6 10 14 L 12.457 14 L 15 14 C 15 13.295 15 12.591 15 11.886 C 15 11.257 15 10.629 15 10 C 15 9.333 15 8.667 15 8 C 15 7.333 15 6.667 15 6 L 15 4.686 L 15 2 L 13.5 2 L 12 2 M 9 8 L 9 8 L 9 8 L 9 8 L 9 8 L 9 8 M 15 8 L 15 8 L 15 8 L 15 8 L 15 8 L 15 8"
+                android:valueType="pathType" />
+        </aapt:attr>
+    </target>
+</animated-vector>

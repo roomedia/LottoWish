@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/inputContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/windowBackground"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="@string/add_game_unit_id"
+        app:layout_constraintBottom_toTopOf="@+id/mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/mode"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:dropDownWidth="@dimen/size_octa"
+        android:entries="@array/add_game"
+        android:nextFocusForward="@id/num1"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_triple"
+        android:width="@dimen/size_double"
+        android:ems="2"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"
+        android:nextFocusDown="@id/num2"
+        android:nextFocusForward="@id/num2"
+        app:layout_constraintBottom_toBottomOf="@+id/num2"
+        app:layout_constraintEnd_toStartOf="@+id/num2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/num2" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/size_double"
+        android:ems="2"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"
+        android:nextFocusDown="@id/num3"
+        android:nextFocusForward="@id/num3"
+        app:layout_constraintBottom_toBottomOf="@+id/num3"
+        app:layout_constraintEnd_toStartOf="@+id/num3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/num1"
+        app:layout_constraintTop_toTopOf="@+id/num3" />
+
+    <EditText
+        android:id="@+id/num3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/size_double"
+        android:ems="2"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"
+        android:nextFocusDown="@id/num4"
+        android:nextFocusForward="@id/num4"
+        app:layout_constraintBottom_toBottomOf="@+id/num4"
+        app:layout_constraintEnd_toStartOf="@+id/num4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/num2"
+        app:layout_constraintTop_toTopOf="@+id/num4" />
+
+    <EditText
+        android:id="@+id/num4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/size_double"
+        android:ems="2"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"
+        android:nextFocusDown="@id/num5"
+        android:nextFocusForward="@id/num5"
+        app:layout_constraintBottom_toBottomOf="@+id/num5"
+        app:layout_constraintEnd_toStartOf="@+id/num5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/num3"
+        app:layout_constraintTop_toTopOf="@+id/num5" />
+
+    <EditText
+        android:id="@+id/num5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/size_double"
+        android:ems="2"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"
+        android:nextFocusDown="@id/num6"
+        android:nextFocusForward="@id/num6"
+        app:layout_constraintBottom_toBottomOf="@+id/num6"
+        app:layout_constraintEnd_toStartOf="@+id/num6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/num4"
+        app:layout_constraintTop_toTopOf="@+id/num6" />
+
+    <EditText
+        android:id="@+id/num6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_single"
+        android:layout_marginBottom="8dp"
+        android:width="@dimen/size_double"
+        android:ems="2"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"
+        android:nextFocusDown="@id/num1"
+        android:nextFocusForward="@id/fab2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/fab2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/num5"
+        app:layout_constraintTop_toBottomOf="@+id/mode" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_single_half"
+        android:layout_marginBottom="28dp"
+        android:hapticFeedbackEnabled="true"
+        android:src="@drawable/ic_input_method_auto_selector"
+        app:backgroundTint="@drawable/fab"
+        app:elevation="@dimen/size_octa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

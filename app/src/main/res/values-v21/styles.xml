@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="com.Roo_Media_.lottowish.AppTheme21" parent="com.Roo_Media_.lottowish.AppTheme15">
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="buttonStyle">@style/com.Roo_Media_.lottowish.Button</item>
+    </style>
+
+    <style name="com.Roo_Media_.lottowish.Button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/ripple_background_overflow</item>
+    </style>
+
+    <style name="com.Roo_Media_.lottowish.AppTheme" parent="com.Roo_Media_.lottowish.AppTheme21" />
+</resources>
