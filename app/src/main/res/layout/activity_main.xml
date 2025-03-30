@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/lotto_fragment"
-        android:name="com.Roo_Media_.lottowish.ui.LottoFragment"
+        android:name="com.roomedia.lottowish.ui.LottoFragment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/size_half"
